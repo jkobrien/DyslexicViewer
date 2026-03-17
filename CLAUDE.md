@@ -30,7 +30,7 @@ DyslexicViewer/
 
 | Layer        | Technology                                    |
 |--------------|-----------------------------------------------|
-| Frontend     | Next.js 14 (App Router), TypeScript (strict)  |
+| Frontend     | Next.js 15 (App Router), TypeScript (strict)  |
 | Styling      | Tailwind CSS, shadcn/ui, Lucide Icons         |
 | Forms        | React Hook Form + Zod                         |
 | Toasts       | Sonner                                        |
