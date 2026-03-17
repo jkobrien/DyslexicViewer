@@ -1,0 +1,35 @@
+{
+  "project": "DyslexicViewer",
+  "branchName": "feature/placeholder",
+  "description": "Replace this with the actual PRD for your feature.",
+  "prdFile": "scripts/ralph/prds/placeholder.json",
+  "contextFiles": [],
+  "mandatoryPatterns": [],
+  "successCriteria": [],
+  "userStories": [
+    {
+      "id": "US-XXX-PY-001",
+      "title": "Placeholder story",
+      "description": "Replace with actual user story",
+      "acceptanceCriteria": [
+        "Acceptance criteria to be defined"
+      ],
+      "priority": 1,
+      "notes": ""
+    }
+  ],
+  "technicalNotes": {},
+  "risks": [
+    {
+      "risk": "No risks identified yet",
+      "mitigation": "Define risks when PRD is populated"
+    }
+  ],
+  "outOfScope": [],
+  "completionChecklist": [
+    "All user stories implemented",
+    "E2E tests pass",
+    "npx ultracite fix run",
+    "Type check passes"
+  ]
+}

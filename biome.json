@@ -1,0 +1,13 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "extends": ["ultracite"],
+  "files": {
+    "ignore": [
+      "node_modules/**",
+      ".next/**",
+      "dist/**",
+      ".turbo/**",
+      "convex/_generated/**"
+    ]
+  }
+}
