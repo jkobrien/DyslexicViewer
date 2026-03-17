@@ -1,0 +1,17 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "convex dev",
+    "build": "convex deploy --preview-run",
+    "check-types": "tsc --noEmit",
+    "codegen": "convex codegen"
+  },
+  "dependencies": {
+    "convex": "^1.17.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

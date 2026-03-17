@@ -1,0 +1,6 @@
+node_modules
+.env*
+convex/_generated
+.next
+dist
+.turbo
