@@ -1,0 +1,48 @@
+[build]
+  command = "npm run build"
+  destination = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=self"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    # Long-term cache for hashed Vite assets
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    # Service worker must never be cached
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[redirects]]
+  # Redirect all routes to index.html for PWA client-side routing
+  from = "/*"
+  to = "/index.html"
+  status = 200
