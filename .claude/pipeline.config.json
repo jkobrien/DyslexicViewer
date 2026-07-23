@@ -1,0 +1,30 @@
+{
+  "project": "dyslexic-viewer",
+  "commands": {
+    "typecheck": "npm run type-check",
+    "lint": "npm run lint",
+    "codegen": "",
+    "test": ""
+  },
+  "reviewRules": [],
+  "gating": {
+    "convexGlobs": [],
+    "frontendGlobs": [
+      "src/**",
+      "**/*.tsx",
+      "**/*.ts",
+      "**/*.css"
+    ],
+    "authGlobs": [
+      "**/auth*.ts"
+    ],
+    "archGlobs": [
+      "src/main.tsx",
+      "vite.config.*",
+      "tsconfig.json"
+    ]
+  },
+  "metrics": {
+    "enabled": false
+  }
+}
